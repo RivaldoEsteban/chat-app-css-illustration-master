@@ -1,6 +1,9 @@
 body {
-  border: 1px solid red;
   margin: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: hsl(206, 6%, 95%);
+  font-size: 14px;
+  overflow: auto;
 }
 h5,
 h2 {
@@ -8,60 +11,92 @@ h2 {
 }
 
 .wrapper {
-  max-width: 1200px;
-  border: 1px solid green;
+  max-width: 850px;
   margin: auto;
 }
 .walking-company-container {
   display: flex;
-  column-gap: 200px;
-  background: white;
-  margin: 30px;
+  align-items: center;
+  column-gap: 100px;
+  width: 100%;
+  min-height: 100vh;
 }
 .walking-company-container-chat {
-  border: 1px solid blue;
   width: 50%;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 50px;
   background: white;
+  position: relative;
+  margin: 20px 0;
 }
 .walking-company-container-header-name {
   display: flex;
-  background: hsl(276, 100%, 81%);
-  padding: 20px;
-  column-gap: 20px;
-  color: white;
+  background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  color: rgba(255, 255, 255, .7);
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 15px 20px;
+  font-size: 10px;
+}
+.walking-header {
+  display: flex;
+  margin-top: 25px;
+  line-height: 20px;
 }
 .walking-company-container-header-name img {
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
   border-radius: 30px ;
   border: 2px solid white;
+  margin-right: 10px;
 }
 .walking-company-container-header-chat {
-  background:hsl(206, 6%, 95%);
-  padding: 30px;
+  background: hsl(270, 20%, 96%);
+  padding: 15px;
+  border-radius: 0 0 32px 32px;
+  display: flex;
+  flex-direction: column;
 }
 .walking-comopany-container-recommendations {
-  width: 50%;
-  border: 1px solid pink;
+  width: 70%;
+  margin: auto;
 }
-.walking-company-name {
-  margin: auto 0;
+.walking-comopany-container-recommendations h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: hsl(271, 36%, 24%);
+}
+.walking-comopany-container-recommendations p {
   line-height: 30px;
+  color: hsl(0, 1%, 71%);
 }
-.message {
-  background:hsl(0, 1%, 83%);
-  color: white;
-  width: 56%;
-  /* padding: 5px; */
-  border-radius: 15px;
+.chat-message {
+  max-width: 165px;
+  padding: 8px 10px;
+  line-height: 15px;
+  font-size: 11px;
+  margin-bottom: 10px;
 }
-.message p {
-  padding: 10px;
+.chat-message p {
+  margin: 0;
+}
+.walking-company-container-header-chat .chat-message-receptor {
+  background: hsl(274, 62%, 95%);
+  color:hsl(276, 79%, 73%);
+  border-radius: 20px 15px 15px 0;
+  align-self: flex-start;
+}
+.walking-company-container-header-chat .chat-message-emisor {
+  background: white;
+  color: grey;
+  border-radius: 20px 15px 0 15px;
+  align-self: flex-end;
 }
 .message-image {
-  column-gap:;
+  position: relative;
+  left: 23px;
 }
 .message-image img {
   width: 80px;
@@ -73,40 +108,95 @@ h2 {
 }
 .message-right {
   background: white;
-  width: 56%;
+  width: 63%;
   position: relative;
-  left: 175px;
-  border-radius: 15px;
-  color: hsl(271, 36%, 24%);
-}
-.message-right-1 {
-  background: white;
-  width: 40%;
-  position: relative;
-  left: 235px;
-  border-radius: 15px;
-  color: hsl(271, 36%, 24%);
-}
-.message-right-1 p {
-  padding: 10px;
-}
-.message-right p {
-  padding: 10px;
+  left: 155px;
+  color: hsl(270, 7%, 64%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-weight: 400;
 }
 .cost-of-service {
   display: flex;
-  width: 70%;
-  background: white;
-  margin: 10px 0;
-  border-radius: 15px;
+  margin-bottom: 10px;
+  padding: 10px 15px 10px 7px;
+  background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
   justify-content: space-between ;
+  border-radius: 13px 13px 13px 5px ;
+  color: white;
+  align-items: center;
+  max-width: 225px;
 }
-.cost-of-service p {
-  padding: 0 20px;
+.chat-message-image {
+  display: flex;
+  margin: 10px 0;
+}
+.walking-company-container-header-chat .chat-message-image {
+  align-self: flex-end;
+}
+.chat-message-image img {
+  width: 50px;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+
+.cost-of-service li {
+  list-style-type: circle;
 }
 .type-message {
   background: white;
-  padding: 5px;
-  border-radius: 15px;
-  margin-top: 25px;
+  padding: 5px 30px;
+  border-radius: 40px;
+  margin-top: 35px;
+  box-shadow: -3px 2px 5px 0px rgba(0, 0, 0, .1);
+  color: rgb(228, 225, 225);
+}
+.box-white {
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 12px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0;
+  color: white;
+  height: 25px;
+}
+.cost-of-service-time::before {
+  /* content: "\f111";
+  font-family: "Font Awesome 5 Free"; */
+  border: 1px solid rgba(255, 255, 255, .5 );
+  content: '';
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 7px;
+
+}
+.cost-of-service-time {
+  position: relative;
+  font-size: 10px;
+  color: rgba(255, 255, 255, .5 );
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.cost-of-service-container {
+  display: flex;
+  position: relative;
+}
+.cost-of-service-price {
+  font-size: 20px;
+  margin: 0;
+}
+.input {
+  border: none;
+  padding: 16px 21px;
+  border-radius: 32px;
+  margin-top: 10px;
+}
+.input::placeholder {
+  color: rgba(0, 0, 0, .3)
 }

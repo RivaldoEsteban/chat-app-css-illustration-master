@@ -2,86 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <section class="wrapper">
-    <section class="walking-company">
-      <div class="walking-company-container">
-        <div class="walking-company-container-chat">
-          <div class="walking-company-container-header-name">
+    <section class="walking-company-container">
+      <div class="walking-company-container-chat">
+        <div class="box-white">
+        </div>
+        <div class="walking-company-container-header-name">
+          <div class="walking-header">
             <img src="images/avatar.jpg" alt="">
-            <div class="walking-company-name">
+            <div>
               <h2>Samuel Green</h2>
               <h5>Available to Walk</h5>
             </div>
           </div>
-          <div class="walking-company-container-header-chat">
-            <div class="message">
-              <p>
-                That sounds great. I’d be happy with that.
-              </p>
-            </div>
-            <div class="message">
-              <p>
-                Could you send over some pictures of your dog, please?
-              </p>
-            </div>
-            <div class="message-image">
-              <img src="images/dog-image-1.jpg" alt="">
-              <img src="images/dog-image-2.jpg" alt="">
-              <img src="images/dog-image-3.jpg" alt="">
-            </div>
-            <div class="message-right">
-              <p>
-                Here are a few pictures. She’s a happy girl!
-              </p>
-            </div>
-            <div class="message-right-1">
-              <p>
-                Can you make it?
-              </p>
-            </div>
-            <div class="message">
-              <p>
-                She looks so happy! The time we discussed works. How long shall I take her out for?
-              </p>
-            </div>
-            <div class="cost-of-service">
-              <p>30 minute walk</p>
-              <p>$29</p>
-            </div>
-            <div class="cost-of-service">
-              <p>1 hour walk</p>
-              <p>$49</p>
-            </div>
-            <div class="type-message">
-              <p>Type a message…</p>
-            </div>
-          </div>
         </div>
-        <div class="walking-comopany-container-recommendations">
-          <div>
-            <h1>
-              Simple booking
-            </h1>
+        <div class="walking-company-container-header-chat">
+          <div class="chat-message chat-message-receptor emisor">
             <p>
-              Stay in touch with our dog walkers through the chat interface. This makes it easy to
-              discuss arrangements and make bookings. Once the walk has been completed you can rate
-              your walker and book again all through the chat.
+              That sounds great. I’d be happy with that.
             </p>
           </div>
+          <div class="chat-message chat-message-receptor">
+            <p>
+              Could you send over some pictures of your dog, please?
+            </p>
+          </div>
+          <div class="chat-message-image">
+            <img src="images/dog-image-1.jpg" alt="">
+            <img src="images/dog-image-2.jpg" alt="">
+            <img src="images/dog-image-3.jpg" alt="">
+          </div>
+          <div class="chat-message chat-message-emisor">
+            <p>
+              Here are a few pictures. She’s a happy girl!
+            </p>
+          </div>
+          <div class="chat-message chat-message-emisor">
+            <p>
+              Can you make it?
+            </p>
+          </div>
+          <div class="chat-message chat-message-receptor">
+            <p>
+              She looks so happy! The time we discussed works. How long shall I take her out for?
+            </p>
+          </div>
+          <div class="cost-of-service">
+            <p class="cost-of-service-time">30 minute walk</p>
+            <p class="cost-of-service-price">$29</p>
+          </div>
+          <div class="cost-of-service">
+            <p class="cost-of-service-time">
+              1 hour walk
+            </p>
+            <p class="cost-of-service-price">$49</p>
+          </div>
+          <input class="input" type="text" placeholder="Type a message..."/>
         </div>
+      </div>
+      <div class="walking-comopany-container-recommendations">
+          <h1>
+            Simple booking
+          </h1>
+          <p>
+            Stay in touch with our dog walkers through the chat interface. This makes it easy to
+            discuss arrangements and make bookings. Once the walk has been completed you can rate
+            your walker and book again all through the chat.
+          </p>
       </div>
     </section>
   </section>
